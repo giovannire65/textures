@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="controls">
+    <label>Texture: <input type="file" id="textureUpload" accept="image/*" /></label><br />
+    <label>Depth Map: <input type="file" id="depthUpload" accept="image/*" /></label><br />
+    <label>Displacement Scale: <input type="range" id="displacement" min="0" max="1" step="0.01" value="0.3" /></label><br />
+    <label>Light Intensity: <input type="range" id="lightIntensity" min="0" max="3" step="0.1" value="1.2" /></label><br />
+    <label>Light X: <input type="range" id="lightX" min="-5" max="5" step="0.1" value="1" /></label><br />
+    <label>Light Y: <input type="range" id="lightY" min="-5" max="5" step="0.1" value="1" /></label><br />
+    <label>Light Z: <input type="range" id="lightZ" min="-5" max="5" step="0.1" value="2" /></label><br />
+    <button onclick="document.getElementById('controls').style.display='none'">Nascondi interfaccia</button>
+  </div>
   <div id="viewer"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/examples/js/controls/DeviceOrientationControls.js"></script>
