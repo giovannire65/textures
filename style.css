@@ -1,8 +1,21 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-family: sans-serif;
 }
 #viewer {
   width: 100vw;
   height: 100vh;
+}
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255,255,255,0.8);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 10;
+}
+input[type="range"] {
+  width: 100%;
 }
