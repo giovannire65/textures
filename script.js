@@ -18,7 +18,7 @@ function init() {
   scene.add(light);
 
   const loader = new THREE.TextureLoader();
-  const texture = loader.load('assets/texture.jpg');
+  const texture = loader.load('assets/texture.png');
   const displacement = loader.load('assets/depth.png');
 
   const geometry = new THREE.PlaneGeometry(3, 3, 256, 256);
